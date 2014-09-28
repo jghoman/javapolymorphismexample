@@ -1,0 +1,8 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+task downloadWrapper(type: Wrapper) {
+    description = "Download the gradle wrapper and requisite files. Overwrites existing wrapper files."
+    gradleVersion = project.gradleVersion
+}
+
